@@ -26,46 +26,49 @@ const cards = [
     name: "Project Name",
     explain: "Summary",
     img: "https://source.unsplash.com/random",
+    link: "https://www.w3schools.com",
   },
   {
     name: "Project Name",
     explain: "Summary",
     img: "https://source.unsplash.com/random",
+    link: "https://www.w3schools.com",
   },
   {
     name: "Project Name",
     explain: "Summary",
     img: "https://source.unsplash.com/random",
+    link: "https://www.w3schools.com",
   },
   {
     name: "Project Name",
     explain: "Summary",
     img: "https://source.unsplash.com/random",
+    link: "https://www.w3schools.com",
   },
   {
     name: "Project Name",
     explain: "Summary",
     img: "https://source.unsplash.com/random",
+    link: "https://www.w3schools.com",
   },
   {
     name: "Project Name",
     explain: "Summary",
     img: "https://source.unsplash.com/random",
+    link: "https://www.w3schools.com",
   },
   {
     name: "Project Name",
     explain: "Summary",
     img: "https://source.unsplash.com/random",
+    link: "https://www.w3schools.com",
   },
   {
     name: "Project Name",
     explain: "Summary",
     img: "https://source.unsplash.com/random",
-  },
-  {
-    name: "Project Name",
-    explain: "Summary",
-    img: "https://source.unsplash.com/random",
+    link: "https://www.w3schools.com",
   },
 ];
 
@@ -186,7 +189,7 @@ export default function CenteredGrid() {
             <Grid item>
               <Grid container alignItems="center" justify="space-between">
                 <Link color="inherit" href="https://material-ui.com/">
-                  <img src={logo} width="100" height="50" />
+                  <img src={logo} alt="" width="100" height="50" />
                 </Link>
                 <Typography variant="h6">{"  "}Serif Colakel</Typography>
               </Grid>
@@ -244,7 +247,7 @@ export default function CenteredGrid() {
       <Container className={classes.cardGrid} maxWidth="lg">
         <Grid container spacing={4}>
           {cards.map((card) => (
-            <Grid item key={card} xs={12} sm={6} md={4}>
+            <Grid item key={card} xs={12} sm={6}>
               <Card className={classes.card}>
                 <CardMedia
                   className={classes.cardMedia}
@@ -263,7 +266,9 @@ export default function CenteredGrid() {
                     variant="contained"
                     color="primary"
                   >
-                    <a>Open Project</a>
+                    <a href={card.link} rel="noreferrer" target="_blank">
+                      Open Project
+                    </a>
                   </Button>
                 </CardActions>
               </Card>
