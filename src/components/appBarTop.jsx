@@ -8,7 +8,7 @@ import AppBar from "@material-ui/core/AppBar";
 
 export default function AppBarTop() {
   return (
-    <AppBar position="sticky" color="inherit">
+    <AppBar position="sticky" className="appBarTop" color="primary">
       <Toolbar>
         <Grid container justify="space-between">
           <Grid item>

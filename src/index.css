@@ -11,6 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.appBarTop{
+  background: linear-gradient(90deg, rgba(92,0,101,1) 0%, rgba(157,162,1,1) 100%, rgba(255,255,255,1) 100%);}
 
 a{
   color:#fff;
