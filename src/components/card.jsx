@@ -11,46 +11,11 @@ import Container from "@material-ui/core/Container";
 
 const cards = [
   {
-    name: "Project Name",
-    explain: "Summary",
-    img: "https://source.unsplash.com/random",
-    link: "https://www.w3schools.com",
-  },
-  {
-    name: "Project Name",
-    explain: "Summary",
-    img: "https://source.unsplash.com/random",
-    link: "https://www.w3schools.com",
-  },
-  {
-    name: "Project Name",
-    explain: "Summary",
-    img: "https://source.unsplash.com/random",
-    link: "https://www.w3schools.com",
-  },
-  {
-    name: "Project Name",
-    explain: "Summary",
-    img: "https://source.unsplash.com/random",
-    link: "https://www.w3schools.com",
-  },
-  {
-    name: "Project Name",
-    explain: "Summary",
-    img: "https://source.unsplash.com/random",
-    link: "https://www.w3schools.com",
-  },
-  {
-    name: "Project Name",
-    explain: "Summary",
-    img: "https://source.unsplash.com/random",
-    link: "https://www.w3schools.com",
-  },
-  {
-    name: "Project Name",
-    explain: "Summary",
-    img: "https://source.unsplash.com/random",
-    link: "https://www.w3schools.com",
+    name: "Vidly",
+    explain:
+      "Also used by this project was used by Mosh Hamedani in the course of the fake database as a pattern in the database, such as liking, deletion, in a way that is complete and as a situation.",
+    img: "https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.jpg",
+    link: "https://vidly-seven.vercel.app/movies",
   },
   {
     name: "Project Name",
@@ -67,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
     overflow: "hidden",
   },
   cardGrid: {
+    display: "flex",
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(16),
   },
@@ -82,6 +48,11 @@ const useStyles = makeStyles((theme) => ({
 
   cardContent: {
     flexGrow: 1,
+    textAlign: "center",
+  },
+  cardButton: {
+    flexGrow: 1,
+    alignSelf: "flex-end",
     textAlign: "center",
   },
 }));
@@ -107,7 +78,7 @@ export default function MuiCard() {
               </CardContent>
               <CardActions className={classes.cardContent}>
                 <Button
-                  className={classes.cardContent}
+                  className={classes.cardButton}
                   variant="contained"
                   color="primary"
                 >
